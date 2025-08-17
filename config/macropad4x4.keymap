@@ -1,5 +1,7 @@
 #include <behaviors.dtsi>
+#include <dt-bindings/zmk/bt.h>
 #include <dt-bindings/zmk/keys.h>
+#include <dt-bindings/zmk/outputs.h>
 
 / {
     keymap {
@@ -8,10 +10,10 @@
         default_layer {
             display-name = "Base";
             bindings = <
-                &kp A &kp B &kp C &kp D
-                &kp E &kp F &kp G &kp H
-                &kp I &kp J &kp K &kp L
-                &kp M &kp N &kp O &kp P
+&studio_unlock  &kp B         &kp C         &bootloader
+&kp E           &kp F         &kp G         &kp H
+&kp I           &kp J         &kp K         &kp L
+&bt BT_CLR_ALL  &bt BT_SEL 0  &out OUT_TOG  &sys_reset
             >;
         };
     };
