@@ -20,17 +20,17 @@
 ---
 include:
 
-  - board: seeeduino_xiao_ble
-    shield: macropad4x4
+#  - board: seeeduino_xiao_ble
+#    shield: macropad4x4
 
 # To build with ZMK Studio support, uncomment the following block
 # by removing the leading '#' from each line.
 
-#  - board: seeeduino_xiao_ble
-#    shield: macropad4x4
-#    snippet: studio-rpc-usb-uart
-#    cmake-args: -DCONFIG_ZMK_STUDIO=y
-#    artifact-name: macropad4x4_with_studio
+  - board: seeeduino_xiao_ble
+    shield: macropad4x4
+    snippet: studio-rpc-usb-uart
+    cmake-args: -DCONFIG_ZMK_STUDIO=y
+    artifact-name: macropad4x4_with_studio
 
   - board: seeeduino_xiao_ble
     shield: settings_reset
