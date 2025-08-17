@@ -1,0 +1,7 @@
+if SHIELD_MACROPAD4X4
+
+# Name must be less than 16 characters long!
+config ZMK_KEYBOARD_NAME
+    default "macropad4x4"
+
+endif
